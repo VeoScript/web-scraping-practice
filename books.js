@@ -26,7 +26,7 @@ async function getBooks() {
     } else {
       const parser = new j2cp()
       const csv = parser.parse(book_data)
-      fs.writeFileSync("./books.csv", csv)
+      fs.writeFileSync("./results/books.csv", csv)
     }
 
     console.log(book_data)
